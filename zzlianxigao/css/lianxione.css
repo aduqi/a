@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+article {
+  display: flex;
+  align-items: flex-end;
+  column-gap: 5vw;
+  margin: 1vw auto;
+  width: 80vw;
+  background-color: #d8fcfc;
+}
+article button {
+  width: 9vw;
+  height: 4vw;
+  font-size: 2vw;
+  background-color: bisque;
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px;
+  border: none;
+}
+input[type=text],
+ul {
+  width: 50vw;
+  height: 15vw;
+}
+ul {
+  margin: 0 auto;
+  background-color: #ffe3e3;
+}
+ul p {
+  background-color: chartreuse;
+}
+ul b {
+  background-color: #ff004c;
+}
