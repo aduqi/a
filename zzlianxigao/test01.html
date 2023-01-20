@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        article {
+            /* margin: 50px auto; */
+            position: absolute;
+            left: 50px;
+            top: 80px;
+            width: 280px;
+            height: 200px;
+            background-color: rgb(215, 215, 245);
+        }
+    </style>
+</head>
+
+<body>
+    <article>
+
+    </article>
+    <script>
+        var arti = document.querySelector('article');
+
+        function fnn(ee) {
+
+            function fnnn(e) {
+                document.addEventListener('mouseup', function () {
+                    document.removeEventListener('mousemove', fnnn);
+                }
+                );
+                arti.style.left = e.pageX - oX + 'px';
+                arti.style.top = e.pageY - oY + 'px';
+
+            }
+
+            var oX = ee.offsetX, oY = ee.offsetY;
+            console.log(oX, oY);
+            document.addEventListener('mousemove', fnnn);
+        }
+        arti.addEventListener('mousedown', fnn);
+
+    </script>
+</body>
+
+</html>
